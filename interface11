@@ -1,0 +1,15 @@
+public interface Actionable {
+    public static boolean isActionable = false;
+
+    public void performAction();
+}
+
+public NuclearAction implements Actionable {
+
+    public void performAction() {
+        // Code that depends on isActionable variable
+        if (isActionable) {
+            // Launch nuclear weapon!!!
+        }
+    }
+}

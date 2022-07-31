@@ -1,0 +1,22 @@
+interface ProtectedMemberInterface {
+    protected String str = "There will be an error.";
+    void display();
+
+}
+
+public class Main implements ProtectedMemberInterface {
+    // override display() of ProtectedMemberInterface
+    public void display() {
+        System.out.print("Protected modifiers not allowed");
+        System.out.print("for Data Members");
+    }
+
+    public static void main(String[] args) {
+        // class instantiation
+        Main m = new Main();
+        // calling display() of Main class
+        m.display();
+        // Accessing protected member of an interface
+        System.out.println(str);
+    }
+}

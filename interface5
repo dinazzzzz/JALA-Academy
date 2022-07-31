@@ -1,0 +1,22 @@
+// Java program to illustrate the behavior of the program
+// when two interfaces having the same methods and different return-type
+// and we defined the method in the child class
+interface InterfaceA
+{
+public
+    int fun();
+}
+interface InterfaceB
+{
+public
+    String moreFun();
+}
+  
+class MainClass implements InterfaceA, InterfaceB
+{
+public
+    String getStuff()
+    {
+        return "one";
+    }
+}
