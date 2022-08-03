@@ -1,0 +1,46 @@
+import java.io.*;
+import java.util.*;
+  
+// Main class
+// IterateTheHashSet
+class GFG {
+  
+    // Main driver method
+    public static void main(String[] args)
+    {
+  
+        // Creating an empty HashSet of string entries
+        HashSet<String> hs = new HashSet<String>();
+  
+        // Adding elements to above Set
+        // using add() method
+        hs.add("bruce");
+        hs.add("alfred");
+        hs.add("robin");
+        hs.add("selina");
+        hs.add("ivy");
+        hs.add("harley");
+        hs.add("gordon");
+        hs.add("harvey");
+        hs.add("joker");
+        hs.add("kingshark");
+  
+        // Iterating though the HashSet using iterators
+        Iterator itr = hs.iterator();
+  
+        // Holds true till there is single element
+        // remaining in Set
+        while (itr.hasNext())
+  
+            // Traversing elements and printing them
+            System.out.print(itr.next() + ", ");
+        System.out.println();
+  
+        // Using enhanced for loop for traversal
+        for (String s : hs)
+  
+            // Traversing elements and printing them
+            System.out.print(s + ", ");
+        System.out.println();
+    }
+}
